@@ -26,7 +26,7 @@ export default function App() {
     );
   }, []);
 
-  const generatePDF = () => {
+  const generatePDF = async () => {
     const doc = new jsPDF();
 
     doc.setFontSize(20);
