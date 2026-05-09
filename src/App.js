@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import jsPDF from "jspdf";
 import SignatureCanvas from "react-signature-canvas";
+import emailjs from "emailjs-com";
 
 export default function App() {
   const signatureRef = useRef(null);
