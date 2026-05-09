@@ -1,0 +1,58 @@
+* {
+  border: 1px solid #d1d5db;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-black {
+  background: black;
+  color: white;
+}
+
+.button-black:hover {
+  opacity: 0.9;
+}
+
+.button-white {
+  background: white;
+  border: 1px solid #d1d5db;
+}
+
+.signature {
+  border: 1px solid #d1d5db;
+  border-radius: 24px;
+  overflow: hidden;
+  background: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media(max-width:768px){
+  .content {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 24px;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+}
