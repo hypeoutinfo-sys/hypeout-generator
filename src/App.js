@@ -66,6 +66,24 @@ export default function App() {
     doc.setFont("courier", "italic");
     doc.setFontSize(20);
     doc.text("Jakub Laskowski", 130, 232);
+    try {
+  await emailjs.send(
+  "service_xhr8bua",
+  "template_l3111wb",
+  {
+    contract_number: contractNumber,
+    seller_name: "Sprzedający",
+    price: price,
+    to_email: "mailklienta@gmail.com"
+  },
+  "nU78h4zf7IbbNOs5g"
+  );
+
+  alert("Mail wysłany");
+} catch (err) {
+  console.error(err);
+  alert("Błąd wysyłki maila");
+}
 
     doc.save(`umowa-${contractNumber}.pdf`);
   };
